@@ -15,6 +15,7 @@
 		3F595A121E13E9E50091320C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F595A101E13E9E50091320C /* LaunchScreen.storyboard */; };
 		3F595A1D1E13E9E50091320C /* menu2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F595A1C1E13E9E50091320C /* menu2Tests.m */; };
 		3F595A281E13E9E50091320C /* menu2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F595A271E13E9E50091320C /* menu2UITests.m */; };
+		3F595A371E13EA6F0091320C /* menu2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F595A361E13EA6F0091320C /* menu2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		3F595A231E13E9E50091320C /* menu2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = menu2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F595A271E13E9E50091320C /* menu2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = menu2UITests.m; sourceTree = "<group>"; };
 		3F595A291E13E9E50091320C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F595A351E13EA6E0091320C /* menu2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "menu2-Bridging-Header.h"; sourceTree = "<group>"; };
+		3F595A361E13EA6F0091320C /* menu2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menu2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				3F595A101E13E9E50091320C /* LaunchScreen.storyboard */,
 				3F595A131E13E9E50091320C /* Info.plist */,
 				3F595A021E13E9E40091320C /* Supporting Files */,
+				3F595A361E13EA6F0091320C /* menu2.swift */,
+				3F595A351E13EA6E0091320C /* menu2-Bridging-Header.h */,
 			);
 			path = menu2;
 			sourceTree = "<group>";
@@ -207,6 +212,8 @@
 				TargetAttributes = {
 					3F5959FE1E13E9E40091320C = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = CBBF4MX96T;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					3F595A171E13E9E50091320C = {
@@ -274,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F595A0A1E13E9E50091320C /* ViewController.m in Sources */,
+				3F595A371E13EA6F0091320C /* menu2.swift in Sources */,
 				3F595A071E13E9E50091320C /* AppDelegate.m in Sources */,
 				3F595A041E13E9E40091320C /* main.m in Sources */,
 			);
@@ -424,10 +432,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = CBBF4MX96T;
 				INFOPLIST_FILE = menu2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = haohao.menu2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "menu2/menu2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -435,16 +448,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = CBBF4MX96T;
 				INFOPLIST_FILE = menu2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = haohao.menu2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "menu2/menu2-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		3F595A301E13E9E50091320C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = menu2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -457,6 +475,7 @@
 		3F595A311E13E9E50091320C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = menu2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -469,6 +488,7 @@
 		3F595A331E13E9E50091320C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = menu2UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = haohao.menu2UITests;
@@ -480,6 +500,7 @@
 		3F595A341E13E9E50091320C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = menu2UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = haohao.menu2UITests;
